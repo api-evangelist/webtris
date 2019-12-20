@@ -1,0 +1,50 @@
+{
+    "name": "WebTRIS",
+    "description": "<p>The WebTRIS data available at http:\/\/webtris.highwaysengland.co.uk\/ is available via an application programming interface (API) in JSON format. This is a free service and there is no need to register to use it. Developers can utilise the WebTRIS data to provide their own services, applications and websites.<\/p>",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/webtris-traffic-flow-api.png",
+    "tags": [
+        "general data",
+        "have api",
+        "have swagger",
+        "traffic"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/webtris\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Highways England API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/logos\/webtris-traffic-flow-api.png",
+            "humanURL": "http:\/\/webtris.highwaysengland.co.uk\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/highways-england-api.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/highways-england-api-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Documentation",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/swagger\/ui\/index"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/"
+        },
+        {
+            "type": "Swagger",
+            "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-definitions\/swagger\/28896-2019-09-03-21-54-16.json"
+        }
+    ]
+}
