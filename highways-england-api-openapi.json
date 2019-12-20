@@ -1,0 +1,636 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "Highways England API",
+        "description": "",
+        "termsOfService": "http:\/\/exmple.com\/license\/"
+    },
+    "servers": [
+        "http:\/\/webtris.highwaysengland.co.uk\/api"
+    ],
+    "paths": {
+        "\/v{version}\/areas": {
+            "get": {
+                "summary": "Returns list of areas",
+                "description": "",
+                "operationId": "VversionAreasGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/areas\/{area_Ids}": {
+            "get": {
+                "summary": "Returns details of selected area",
+                "description": "",
+                "operationId": "VversionAreasAreaIdsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "area_Ids",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/quality\/daily": {
+            "get": {
+                "summary": "Get Site DailyQuality",
+                "description": "",
+                "operationId": "QualityGetDailyDataQualityForSite",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "siteId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/quality\/overall": {
+            "get": {
+                "summary": "Get Site OverallQuality",
+                "description": "",
+                "operationId": "QualityGetOverallDataQualityForSites",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sites",
+                        "in": "query",
+                        "description": "Get site quality by site id delimited by ,"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/reports\/{report_type}": {
+            "get": {
+                "summary": "Gets the daily report.",
+                "description": "Get's the report.",
+                "operationId": "VversionReportsReportTypeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "report_type",
+                        "in": "path",
+                        "description": "Report Type Id (i.e Daily, Monthly, Annual)"
+                    },
+                    {
+                        "name": "sites",
+                        "in": "query",
+                        "description": "Get site quality by site id delimited by ,"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "query",
+                        "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "query",
+                        "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page offset to return."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The number of rows to return."
+                    },
+                    {
+                        "name": "reportSubTypeId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/reports\/{start_date}\/to\/{end_date}\/{report_type}": {
+            "get": {
+                "summary": "Gets the daily report.",
+                "description": "Get's the report.",
+                "operationId": "VversionReportsStartDateToEndDateReportTypeGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "report_type",
+                        "in": "path",
+                        "description": "Report Type Id (i.e Daily, Monthly, Annual)"
+                    },
+                    {
+                        "name": "sites",
+                        "in": "query",
+                        "description": "Get site quality by site id delimited by ,"
+                    },
+                    {
+                        "name": "start_date",
+                        "in": "path",
+                        "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "end_date",
+                        "in": "path",
+                        "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)"
+                    },
+                    {
+                        "name": "page",
+                        "in": "query",
+                        "description": "The page offset to return."
+                    },
+                    {
+                        "name": "page_size",
+                        "in": "query",
+                        "description": "The number of rows to return."
+                    },
+                    {
+                        "name": "reportSubTypeId",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/sites": {
+            "get": {
+                "summary": "Get a list of sites",
+                "description": "",
+                "operationId": "VversionSitesGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/sites\/{site_Ids}": {
+            "get": {
+                "summary": "Get selected sites",
+                "description": "",
+                "operationId": "VversionSitesSiteIdsGet",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "site_Ids",
+                        "in": "path",
+                        "description": "site id"
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/sitetypes": {
+            "get": {
+                "summary": "Return list of site types",
+                "description": "",
+                "operationId": "SiteTypesIndex",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "\/v{version}\/sitetypes\/{siteType_Id}\/sites": {
+            "get": {
+                "summary": "Returns the layer metadata for the LayerId specified.",
+                "description": "",
+                "operationId": "SiteTypesGetSitesForPublicFacingAPI",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "siteType_Id",
+                        "in": "path",
+                        "description": "1 = MIDAS, 2 = TAME, 3 = TMU, 4 = TRADS Legacy"
+                    },
+                    {
+                        "name": "version",
+                        "in": "path",
+                        "description": ""
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "$href": "#\/components\/schemas\/AreaResponse"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Area": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "XLatitude": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "XLongitude": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "YLatitude": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "YLongitude": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "AreaResponse": {
+                "type": "object",
+                "properties": {
+                    "areas": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "row_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "areas": {
+                "type": "array"
+            },
+            "DailyQualityResponse": {
+                "type": "object",
+                "properties": {
+                    "Qualities": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "row_count": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Qualities": {
+                "type": "object",
+                "properties": {
+                    "Date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Quality": {
+                        "description": "",
+                        "type": "integer"
+                    }
+                }
+            },
+            "Object": {
+                "type": "object"
+            },
+            "OverallQualityResponse": {
+                "type": "object",
+                "properties": {
+                    "data_quality": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "end_date": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "row_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "sites": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "start_date": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SiteResponse": {
+                "type": "object",
+                "properties": {
+                    "row_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "sites": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "sites": {
+                "type": "array"
+            },
+            "SiteResult": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Id": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Latitude": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "Longitude": {
+                        "description": "",
+                        "type": "number"
+                    },
+                    "Name": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Status": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SiteType": {
+                "type": "object",
+                "properties": {
+                    "Description": {
+                        "description": "",
+                        "type": "string"
+                    },
+                    "Id": {
+                        "description": "",
+                        "type": "string"
+                    }
+                }
+            },
+            "SiteTypeLayer": {
+                "type": "object",
+                "properties": {
+                    "sites": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "SiteTypeResponse": {
+                "type": "object",
+                "properties": {
+                    "row_count": {
+                        "description": "",
+                        "type": "integer"
+                    },
+                    "sitetypes": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "sitetypes": {
+                "type": "array"
+            },
+            "Sites": {
+                "type": "object",
+                "properties": {
+                    "Active": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Id": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Lattitude": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "Longitude": {
+                        "description": "",
+                        "type": "array"
+                    },
+                    "SiteId": {
+                        "description": "",
+                        "type": "array"
+                    }
+                }
+            },
+            "Active": {
+                "type": "array"
+            },
+            "Description": {
+                "type": "array"
+            },
+            "Id": {
+                "type": "array"
+            },
+            "Lattitude": {
+                "type": "array"
+            },
+            "Longitude": {
+                "type": "array"
+            },
+            "SiteId": {
+                "type": "array"
+            }
+        }
+    }
+}
