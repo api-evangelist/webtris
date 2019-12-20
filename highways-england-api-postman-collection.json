@@ -1,0 +1,484 @@
+{
+    "id": "7d99c3a41b66a57f4931ac44defd7ae1",
+    "name": "Highways England API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "8d6a651ec429bb5b3810b48096acc342",
+            "name": "Returns list of areas",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/areas",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "54231bc9a87f8e371f92d24021ae23d6",
+            "name": "Returns details of selected area",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/areas\/{area_Ids}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "area_Ids",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "7026dd282c5c4cf010c9d4970a4b021a",
+            "name": "Get Site DailyQuality",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/quality\/daily",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "siteId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5e12b0201e8a717560b23f943f7e37a",
+            "name": "Get Site OverallQuality",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/quality\/overall",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "sites",
+                    "description": "Get site quality by site id delimited by ,",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d4cb18f1395d396e05472e8929c73980",
+            "name": "Gets the daily report.",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/reports\/{report_type}",
+            "description": "Get's the report.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "report_type",
+                    "description": "Report Type Id (i.e Daily, Monthly, Annual)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sites",
+                    "description": "Get site quality by site id delimited by ,",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "The page offset to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The number of rows to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reportSubTypeId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "02cd3895d2f0299c2278cd6bda352641",
+            "name": "Gets the daily report.",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/reports\/{start_date}\/to\/{end_date}\/{report_type}",
+            "description": "Get's the report.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "report_type",
+                    "description": "Report Type Id (i.e Daily, Monthly, Annual)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "sites",
+                    "description": "Get site quality by site id delimited by ,",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "start_date",
+                    "description": "The start date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "end_date",
+                    "description": "The end date of the report in the format ddmmyyyy (i.e 31012016)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page",
+                    "description": "The page offset to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "page_size",
+                    "description": "The number of rows to return.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "reportSubTypeId",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "05c563bc98029d1b7229ad0423cb1dab",
+            "name": "Get a list of sites",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sites",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "a321e030beb40e2eb342f1502c6a4ffa",
+            "name": "Get selected sites",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sites\/{site_Ids}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "site_Ids",
+                    "description": "site id",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "f3a7bb80da17d9c6ebe0e5c0468137f9",
+            "name": "Return list of site types",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sitetypes",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        },
+        {
+            "id": "d1dde2a41fec11045477582248234cbf",
+            "name": "Returns the layer metadata for the LayerId specified.",
+            "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sitetypes\/{siteType_Id}\/sites",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "siteType_Id",
+                    "description": "1 = MIDAS, 2 = TAME, 3 = TMU, 4 = TRADS Legacy",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "version",
+                    "description": "",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "rawModeData": ""
+        }
+    ]
+}
