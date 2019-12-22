@@ -1,5 +1,5 @@
 {
-    "id": "7d99c3a41b66a57f4931ac44defd7ae1",
+    "id": "3c1e845fe584c7b36315a72439adf8c1",
     "name": "Highways England API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "8d6a651ec429bb5b3810b48096acc342",
+            "id": "27877e79b9f187dc906df6f05f8317d4",
             "name": "Returns list of areas",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/areas",
             "description": "",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "54231bc9a87f8e371f92d24021ae23d6",
+            "id": "8d1021444af3c2a0d131505194232f82",
             "name": "Returns details of selected area",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/areas\/{area_Ids}",
             "description": "",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "7026dd282c5c4cf010c9d4970a4b021a",
+            "id": "7eb4113acf7bd25768402cd35d7a7b4a",
             "name": "Get Site DailyQuality",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/quality\/daily",
             "description": "",
@@ -127,11 +127,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "b5e12b0201e8a717560b23f943f7e37a",
+            "id": "c61955fe53f3c4df0d706e2531d9d593",
             "name": "Get Site OverallQuality",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/quality\/overall",
             "description": "",
@@ -179,11 +179,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "d4cb18f1395d396e05472e8929c73980",
+            "id": "69af586b51a71ebda952ebcbf3a09fd0",
             "name": "Gets the daily report.",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/reports\/{report_type}",
             "description": "Get's the report.",
@@ -259,11 +259,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "02cd3895d2f0299c2278cd6bda352641",
+            "id": "075863dac8ea64ec9c587c4ca8b5b45d",
             "name": "Gets the daily report.",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/reports\/{start_date}\/to\/{end_date}\/{report_type}",
             "description": "Get's the report.",
@@ -339,11 +339,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "05c563bc98029d1b7229ad0423cb1dab",
+            "id": "9f697db645676f62a222424068afaebd",
             "name": "Get a list of sites",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sites",
             "description": "",
@@ -370,11 +370,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "a321e030beb40e2eb342f1502c6a4ffa",
+            "id": "f4c7672af1ad74064ac0771c10c4fc70",
             "name": "Get selected sites",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sites\/{site_Ids}",
             "description": "",
@@ -408,11 +408,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "f3a7bb80da17d9c6ebe0e5c0468137f9",
+            "id": "445e723adc1ebafc143623da1404d533",
             "name": "Return list of site types",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sitetypes",
             "description": "",
@@ -439,11 +439,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         },
         {
-            "id": "d1dde2a41fec11045477582248234cbf",
+            "id": "7a74ea2006e0dccf06862a91058b40bc",
             "name": "Returns the layer metadata for the LayerId specified.",
             "url": "http:\/\/webtris.highwaysengland.co.uk\/api\/v{version}\/sitetypes\/{siteType_Id}\/sites",
             "description": "",
@@ -477,7 +477,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "7d99c3a41b66a57f4931ac44defd7ae1",
+            "collectionId": "3c1e845fe584c7b36315a72439adf8c1",
             "rawModeData": ""
         }
     ]
